@@ -1,0 +1,55 @@
+# CMake generation dependency list for this directory.
+C:/Development/op3d_active/ODM-1.0.0/modules/odm_georef/CMakeLists.txt
+C:/Development/op3d_active/PDAL-2.1.0/msvc/PDALConfig.cmake
+C:/Development/op3d_active/PDAL-2.1.0/msvc/PDALConfigVersion.cmake
+C:/Development/op3d_active/PDAL-2.1.0/msvc/PDALTargets.cmake
+C:/Development/op3d_active/VTK-9.0.1/msvc/lib/cmake/vtk-9.0/VTK-targets.cmake
+C:/Development/op3d_active/VTK-9.0.1/msvc/lib/cmake/vtk-9.0/VTK-vtk-module-find-packages.cmake
+C:/Development/op3d_active/VTK-9.0.1/msvc/lib/cmake/vtk-9.0/VTK-vtk-module-properties.cmake
+C:/Development/op3d_active/VTK-9.0.1/msvc/lib/cmake/vtk-9.0/patches/99/FindOpenGL.cmake
+C:/Development/op3d_active/VTK-9.0.1/msvc/lib/cmake/vtk-9.0/vtk-config.cmake
+C:/Development/op3d_active/VTK-9.0.1/msvc/lib/cmake/vtk-9.0/vtk-find-package-helpers.cmake
+C:/Development/op3d_active/VTK-9.0.1/msvc/lib/cmake/vtk-9.0/vtk-prefix.cmake
+C:/Development/op3d_active/VTK-9.0.1/msvc/lib/cmake/vtk-9.0/vtk-use-file-deprecated.cmake
+C:/Development/op3d_active/VTK-9.0.1/msvc/lib/cmake/vtk-9.0/vtkCMakeBackports.cmake
+C:/Development/op3d_active/VTK-9.0.1/msvc/lib/cmake/vtk-9.0/vtkEncodeString.cmake
+C:/Development/op3d_active/VTK-9.0.1/msvc/lib/cmake/vtk-9.0/vtkHashSource.cmake
+C:/Development/op3d_active/VTK-9.0.1/msvc/lib/cmake/vtk-9.0/vtkModule.cmake
+C:/Development/op3d_active/VTK-9.0.1/msvc/lib/cmake/vtk-9.0/vtkModuleJson.cmake
+C:/Development/op3d_active/VTK-9.0.1/msvc/lib/cmake/vtk-9.0/vtkModuleTesting.cmake
+C:/Development/op3d_active/VTK-9.0.1/msvc/lib/cmake/vtk-9.0/vtkObjectFactory.cmake
+C:/Development/op3d_active/VTK-9.0.1/msvc/lib/cmake/vtk-9.0/vtkTopologicalSort.cmake
+C:/Development/op3d_active/VTK-9.0.1/msvc/vtk-config-version.cmake
+C:/Development/op3d_active/VTK-9.0.1/msvc/vtk-config.cmake
+C:/Development/op3d_active/eigen-3.3.7/msvc/Eigen3Targets.cmake
+C:/Development/op3d_active/eigen-3.3.7/msvc/EigenConfig.cmake
+C:/Development/op3d_active/eigen-3.3.7/msvc/UseEigen3.cmake
+C:/Development/op3d_active/opencv-4.1.0/msvc/OpenCVConfig-version.cmake
+C:/Development/op3d_active/opencv-4.1.0/msvc/OpenCVConfig.cmake
+C:/Development/op3d_active/opencv-4.1.0/msvc/OpenCVModules.cmake
+C:/Development/op3d_active/pcl-1.11.0/msvc/PCLConfig.cmake
+C:/Development/op3d_active/pcl-1.11.0/msvc/PCLConfigVersion.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/CheckCCompilerFlag.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/CheckCSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/CheckCXXCompilerFlag.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/CheckCXXSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/CheckIncludeFile.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/CheckLibraryExists.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/CheckSymbolExists.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/ExternalData.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/FindBoost.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/FindCUDA.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/FindCUDA/select_compute_arch.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/FindEnsenso.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/FindFlann.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/FindOpenNI2.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/FindPCAP.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/FindPNG.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/FindPkgConfig.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/FindQHull.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/FindThreads.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/FindZLIB.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/GenerateExportHeader.cmake

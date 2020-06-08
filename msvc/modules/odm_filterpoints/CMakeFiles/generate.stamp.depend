@@ -1,0 +1,5 @@
+# CMake generation dependency list for this directory.
+C:/Development/op3d_active/ODM-1.0.0/modules/odm_filterpoints/CMakeLists.txt
+C:/Development/op3d_active/PDAL-2.1.0/msvc/PDALConfig.cmake
+C:/Development/op3d_active/PDAL-2.1.0/msvc/PDALConfigVersion.cmake
+C:/Development/op3d_active/PDAL-2.1.0/msvc/PDALTargets.cmake

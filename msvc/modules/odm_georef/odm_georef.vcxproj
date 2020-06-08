@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2017_Debug|x64">
+      <Configuration>vs2017_Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2017_Release|x64">
+      <Configuration>vs2017_Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{50539344-116B-3445-8F19-00ABF1A601ED}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>odm_georef</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">odm_georef</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">odm_georef</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">odm_georef</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">odm_georef</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\..\$(EIGEN3_DIR)\include\eigen3;..\..\..\..\$(PCL_DIR)\include\pcl-1.11;..\..\..\..\$(EIGEN3_DIR);..\..\..\..\$(PDAL_DIR)\msvc\include;..\..\..\..\$(PDAL_DIR);..\..\..\modules\odm_georef\..\..\SuperBuild\src\pdal\vendor\jsoncpp\dist;$(BOOST_DIR);..\..\..\..\$(PCL_DIR)\common\include;..\..\..\..\$(PCL_DIR)\msvc\include;$(ENSENSO_DIR)\c\include;..\..\..\..\$(WINCAP_DIR)\wpcap\libpcap;..\..\..\..\$(PNG_DIR);..\..\..\..\$(PCL_DIR)\io\include;..\..\..\..\$(PCL_DIR)\octree\include;..\..\..\..\$(QHULL_DIR)\src\libqhull;..\..\..\..\$(PCL_DIR)\surface\include;..\..\..\..\$(FLANN_DIR)\src\cpp;..\..\..\..\$(PCL_DIR)\search\include;..\..\..\..\$(PCL_DIR)\kdtree\include;..\..\..\..\$(LASZIP3_DIR)\include;..\..\..\..\$(OPENCV_DIR)\msvc;..\..\..\..\$(OPENCV_DIR)\include;..\..\..\..\$(OPENCV_DIR)\modules\cudev\include;..\..\..\..\$(OPENCV_DIR)\modules\core\include;..\..\..\..\$(OPENCV_DIR)\modules\flann\include;..\..\..\..\$(OPENCV_DIR)\modules\imgproc\include;..\..\..\..\$(OPENCV_DIR)\modules\ml\include;..\..\..\..\$(OPENCV_DIR)\modules\photo\include;..\..\..\..\$(OPENCV_DIR)\modules\dnn\include;..\..\..\..\$(OPENCV_DIR)\modules\features2d\include;..\..\..\..\$(OPENCV_DIR)\modules\imgcodecs\include;..\..\..\..\$(OPENCV_DIR)\modules\videoio\include;..\..\..\..\$(OPENCV_DIR)\modules\calib3d\include;..\..\..\..\$(OPENCV_DIR)\modules\highgui\include;..\..\..\..\$(OPENCV_DIR)\modules\objdetect\include;..\..\..\..\$(OPENCV_DIR)\modules\stitching\include;..\..\..\..\$(OPENCV_DIR)\modules\ts\include;..\..\..\..\$(OPENCV_DIR)\modules\video\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) </AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <CppLanguageStandard>c++11</CppLanguageStandard>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;__SSSE3__;__SSE2__;__SSE__;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;__SSSE3__;__SSE2__;__SSE__;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\eigin-3.3.7\include\eigen3;..\..\..\..\$(PCL_DIR)\include\pcl-1.11;..\..\..\..\$(EIGEN3_DIR);..\..\..\..\$(PDAL_DIR)\msvc\include;..\..\..\modules\odm_georef\..\..\SuperBuild\src\pdal\vendor\jsoncpp\dist;$(BOOST_DIR);..\..\..\..\$(PCL_DIR)\common\include;..\..\..\..\$(PCL_DIR)\msvc\include;..\..\..\..\..\..\Program Files\Ensenso\development\c\include;..\..\..\..\$(WINCAP_DIR)\wpcap\libpcap;..\..\..\..\$(PNG_DIR);..\..\..\..\$(PCL_DIR)\io\include;..\..\..\..\$(PCL_DIR)\octree\include;..\..\..\..\$(QHULL_DIR)\src\libqhull;..\..\..\..\$(PCL_DIR)\surface\include;..\..\..\..\$(FLANN_DIR)\src\cpp;..\..\..\..\$(PCL_DIR)\search\include;..\..\..\..\$(PCL_DIR)\kdtree\include;..\..\..\..\$(OPENCV_DIR)\msvc;..\..\..\..\$(OPENCV_DIR)\include;..\..\..\..\$(OPENCV_DIR)\modules\cudev\include;..\..\..\..\$(OPENCV_DIR)\modules\core\include;..\..\..\..\$(OPENCV_DIR)\modules\flann\include;..\..\..\..\$(OPENCV_DIR)\modules\imgproc\include;..\..\..\..\$(OPENCV_DIR)\modules\ml\include;..\..\..\..\$(OPENCV_DIR)\modules\photo\include;..\..\..\..\$(OPENCV_DIR)\modules\dnn\include;..\..\..\..\$(OPENCV_DIR)\modules\features2d\include;..\..\..\..\$(OPENCV_DIR)\modules\imgcodecs\include;..\..\..\..\$(OPENCV_DIR)\modules\videoio\include;..\..\..\..\$(OPENCV_DIR)\modules\calib3d\include;..\..\..\..\$(OPENCV_DIR)\modules\highgui\include;..\..\..\..\$(OPENCV_DIR)\modules\objdetect\include;..\..\..\..\$(OPENCV_DIR)\modules\stitching\include;..\..\..\..\$(OPENCV_DIR)\modules\ts\include;..\..\..\..\$(OPENCV_DIR)\modules\video\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\..\eigin-3.3.7\include\eigen3;..\..\..\..\$(PCL_DIR)\include\pcl-1.11;..\..\..\..\$(EIGEN3_DIR);..\..\..\..\$(PDAL_DIR)\msvc\include;..\..\..\modules\odm_georef\..\..\SuperBuild\src\pdal\vendor\jsoncpp\dist;$(BOOST_DIR);..\..\..\..\$(PCL_DIR)\common\include;..\..\..\..\$(PCL_DIR)\msvc\include;..\..\..\..\..\..\Program Files\Ensenso\development\c\include;..\..\..\..\$(WINCAP_DIR)\wpcap\libpcap;..\..\..\..\$(PNG_DIR);..\..\..\..\$(PCL_DIR)\io\include;..\..\..\..\$(PCL_DIR)\octree\include;..\..\..\..\$(QHULL_DIR)\src\libqhull;..\..\..\..\$(PCL_DIR)\surface\include;..\..\..\..\$(FLANN_DIR)\src\cpp;..\..\..\..\$(PCL_DIR)\search\include;..\..\..\..\$(PCL_DIR)\kdtree\include;..\..\..\..\$(OPENCV_DIR)\msvc;..\..\..\..\$(OPENCV_DIR)\include;..\..\..\..\$(OPENCV_DIR)\modules\cudev\include;..\..\..\..\$(OPENCV_DIR)\modules\core\include;..\..\..\..\$(OPENCV_DIR)\modules\flann\include;..\..\..\..\$(OPENCV_DIR)\modules\imgproc\include;..\..\..\..\$(OPENCV_DIR)\modules\ml\include;..\..\..\..\$(OPENCV_DIR)\modules\photo\include;..\..\..\..\$(OPENCV_DIR)\modules\dnn\include;..\..\..\..\$(OPENCV_DIR)\modules\features2d\include;..\..\..\..\$(OPENCV_DIR)\modules\imgcodecs\include;..\..\..\..\$(OPENCV_DIR)\modules\videoio\include;..\..\..\..\$(OPENCV_DIR)\modules\calib3d\include;..\..\..\..\$(OPENCV_DIR)\modules\highgui\include;..\..\..\..\$(OPENCV_DIR)\modules\objdetect\include;..\..\..\..\$(OPENCV_DIR)\modules\stitching\include;..\..\..\..\$(OPENCV_DIR)\modules\ts\include;..\..\..\..\$(OPENCV_DIR)\modules\video\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>boost_serialization-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;boost_serialization-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;boost_filesystem-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;boost_filesystem-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;boost_date_time-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;boost_date_time-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;boost_iostreams-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;boost_iostreams-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;boost_system-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;boost_system-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;pcl_iod.lib;pcl_surfaced.lib;proj_6_0.lib;opencv_highgui410d.lib;jsoncpp.lib;pdalcpp.lib;pdal_util.lib;pcl_searchd.lib;pcl_octreed.lib;pcl_kdtreed.lib;pcl_commond.lib;opencv_videoio410d.lib;opencv_imgcodecs410d.lib;opencv_imgproc410d.lib;opencv_core410d.lib;opencv_cudev410d.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\..\$(PCL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\Proj-6.0.0\msvc\vc141\x64\vs2017_Release;$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);$(BOOST_DIR)\stage\$(Platform)\lib;$(CUDA_LIB_PATH)\$(Platform);..\..\..\..\$(PDAL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\$(OPENCV_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\$(JSON_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)odm_georef.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\..\$(EIGEN3_DIR)\include\eigen3;..\..\..\..\$(PCL_DIR)\include\pcl-1.11;..\..\..\..\$(EIGEN3_DIR);..\..\..\..\$(PDAL_DIR)\msvc\include;..\..\..\..\$(PDAL_DIR);..\..\..\modules\odm_georef\..\..\SuperBuild\src\pdal\vendor\jsoncpp\dist;$(BOOST_DIR);..\..\..\..\$(PCL_DIR)\common\include;..\..\..\..\$(PCL_DIR)\msvc\include;$(ENSENSO_DIR)\c\include;..\..\..\..\$(WINCAP_DIR)\wpcap\libpcap;..\..\..\..\$(PNG_DIR);..\..\..\..\$(PCL_DIR)\io\include;..\..\..\..\$(PCL_DIR)\octree\include;..\..\..\..\$(QHULL_DIR)\src\libqhull;..\..\..\..\$(PCL_DIR)\surface\include;..\..\..\..\$(FLANN_DIR)\src\cpp;..\..\..\..\$(PCL_DIR)\search\include;..\..\..\..\$(PCL_DIR)\kdtree\include;..\..\..\..\$(LASZIP3_DIR)\include;..\..\..\..\$(OPENCV_DIR)\msvc;..\..\..\..\$(OPENCV_DIR)\include;..\..\..\..\$(OPENCV_DIR)\modules\cudev\include;..\..\..\..\$(OPENCV_DIR)\modules\core\include;..\..\..\..\$(OPENCV_DIR)\modules\flann\include;..\..\..\..\$(OPENCV_DIR)\modules\imgproc\include;..\..\..\..\$(OPENCV_DIR)\modules\ml\include;..\..\..\..\$(OPENCV_DIR)\modules\photo\include;..\..\..\..\$(OPENCV_DIR)\modules\dnn\include;..\..\..\..\$(OPENCV_DIR)\modules\features2d\include;..\..\..\..\$(OPENCV_DIR)\modules\imgcodecs\include;..\..\..\..\$(OPENCV_DIR)\modules\videoio\include;..\..\..\..\$(OPENCV_DIR)\modules\calib3d\include;..\..\..\..\$(OPENCV_DIR)\modules\highgui\include;..\..\..\..\$(OPENCV_DIR)\modules\objdetect\include;..\..\..\..\$(OPENCV_DIR)\modules\stitching\include;..\..\..\..\$(OPENCV_DIR)\modules\ts\include;..\..\..\..\$(OPENCV_DIR)\modules\video\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) </AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <CppLanguageStandard>c++11</CppLanguageStandard>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;BOOST_ALL_NO_LIB;_WINDOWS;__SSSE3__;__SSE2__;__SSE__;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;__SSSE3__;__SSE2__;__SSE__;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\eigin-3.3.7\include\eigen3;..\..\..\..\$(PCL_DIR)\include\pcl-1.11;..\..\..\..\$(EIGEN3_DIR);..\..\..\..\$(PDAL_DIR)\msvc\include;..\..\..\modules\odm_georef\..\..\SuperBuild\src\pdal\vendor\jsoncpp\dist;$(BOOST_DIR);..\..\..\..\$(PCL_DIR)\common\include;..\..\..\..\$(PCL_DIR)\msvc\include;..\..\..\..\..\..\Program Files\Ensenso\development\c\include;..\..\..\..\$(WINCAP_DIR)\wpcap\libpcap;..\..\..\..\$(PNG_DIR);..\..\..\..\$(PCL_DIR)\io\include;..\..\..\..\$(PCL_DIR)\octree\include;..\..\..\..\$(QHULL_DIR)\src\libqhull;..\..\..\..\$(PCL_DIR)\surface\include;..\..\..\..\$(FLANN_DIR)\src\cpp;..\..\..\..\$(PCL_DIR)\search\include;..\..\..\..\$(PCL_DIR)\kdtree\include;..\..\..\..\$(OPENCV_DIR)\msvc;..\..\..\..\$(OPENCV_DIR)\include;..\..\..\..\$(OPENCV_DIR)\modules\cudev\include;..\..\..\..\$(OPENCV_DIR)\modules\core\include;..\..\..\..\$(OPENCV_DIR)\modules\flann\include;..\..\..\..\$(OPENCV_DIR)\modules\imgproc\include;..\..\..\..\$(OPENCV_DIR)\modules\ml\include;..\..\..\..\$(OPENCV_DIR)\modules\photo\include;..\..\..\..\$(OPENCV_DIR)\modules\dnn\include;..\..\..\..\$(OPENCV_DIR)\modules\features2d\include;..\..\..\..\$(OPENCV_DIR)\modules\imgcodecs\include;..\..\..\..\$(OPENCV_DIR)\modules\videoio\include;..\..\..\..\$(OPENCV_DIR)\modules\calib3d\include;..\..\..\..\$(OPENCV_DIR)\modules\highgui\include;..\..\..\..\$(OPENCV_DIR)\modules\objdetect\include;..\..\..\..\$(OPENCV_DIR)\modules\stitching\include;..\..\..\..\$(OPENCV_DIR)\modules\ts\include;..\..\..\..\$(OPENCV_DIR)\modules\video\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\..\eigin-3.3.7\include\eigen3;..\..\..\..\$(PCL_DIR)\include\pcl-1.11;..\..\..\..\$(EIGEN3_DIR);..\..\..\..\$(PDAL_DIR)\msvc\include;..\..\..\modules\odm_georef\..\..\SuperBuild\src\pdal\vendor\jsoncpp\dist;$(BOOST_DIR);..\..\..\..\$(PCL_DIR)\common\include;..\..\..\..\$(PCL_DIR)\msvc\include;..\..\..\..\..\..\Program Files\Ensenso\development\c\include;..\..\..\..\$(WINCAP_DIR)\wpcap\libpcap;..\..\..\..\$(PNG_DIR);..\..\..\..\$(PCL_DIR)\io\include;..\..\..\..\$(PCL_DIR)\octree\include;..\..\..\..\$(QHULL_DIR)\src\libqhull;..\..\..\..\$(PCL_DIR)\surface\include;..\..\..\..\$(FLANN_DIR)\src\cpp;..\..\..\..\$(PCL_DIR)\search\include;..\..\..\..\$(PCL_DIR)\kdtree\include;..\..\..\..\$(OPENCV_DIR)\msvc;..\..\..\..\$(OPENCV_DIR)\include;..\..\..\..\$(OPENCV_DIR)\modules\cudev\include;..\..\..\..\$(OPENCV_DIR)\modules\core\include;..\..\..\..\$(OPENCV_DIR)\modules\flann\include;..\..\..\..\$(OPENCV_DIR)\modules\imgproc\include;..\..\..\..\$(OPENCV_DIR)\modules\ml\include;..\..\..\..\$(OPENCV_DIR)\modules\photo\include;..\..\..\..\$(OPENCV_DIR)\modules\dnn\include;..\..\..\..\$(OPENCV_DIR)\modules\features2d\include;..\..\..\..\$(OPENCV_DIR)\modules\imgcodecs\include;..\..\..\..\$(OPENCV_DIR)\modules\videoio\include;..\..\..\..\$(OPENCV_DIR)\modules\calib3d\include;..\..\..\..\$(OPENCV_DIR)\modules\highgui\include;..\..\..\..\$(OPENCV_DIR)\modules\objdetect\include;..\..\..\..\$(OPENCV_DIR)\modules\stitching\include;..\..\..\..\$(OPENCV_DIR)\modules\ts\include;..\..\..\..\$(OPENCV_DIR)\modules\video\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>boost_serialization-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;boost_filesystem-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;boost_date_time-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;boost_iostreams-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;boost_system-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;boost_thread-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;pcl_iod.lib;pcl_surfaced.lib;proj_6_0.lib;opencv_highgui410d.lib;json-c.lib;pdalcpp.lib;pdal_util.lib;pcl_searchd.lib;pcl_octreed.lib;pcl_kdtreed.lib;pcl_commond.lib;opencv_videoio410d.lib;opencv_imgcodecs410d.lib;opencv_imgproc410d.lib;opencv_core410d.lib;opencv_cudev410d.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\..\$(PCL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\Proj-6.0.0\msvc\vc141\x64\vs2017_Release;$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);$(BOOST_DIR)\stage\$(Platform)\lib;$(CUDA_LIB_PATH)\$(Platform);..\..\..\..\$(PDAL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\$(OPENCV_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\$(JSON_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)odm_georef.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\..\$(EIGEN3_DIR)\include\eigen3;..\..\..\..\$(PCL_DIR)\include\pcl-1.11;..\..\..\..\$(EIGEN3_DIR);..\..\..\..\$(PDAL_DIR)\msvc\include;..\..\..\..\$(PDAL_DIR);..\..\..\modules\odm_georef\..\..\SuperBuild\src\pdal\vendor\jsoncpp\dist;$(BOOST_DIR);..\..\..\..\$(PCL_DIR)\common\include;..\..\..\..\$(PCL_DIR)\msvc\include;$(ENSENSO_DIR)\c\include;..\..\..\..\$(WINCAP_DIR)\wpcap\libpcap;..\..\..\..\$(PNG_DIR);..\..\..\..\$(PCL_DIR)\io\include;..\..\..\..\$(PCL_DIR)\octree\include;..\..\..\..\$(QHULL_DIR)\src\libqhull;..\..\..\..\$(PCL_DIR)\surface\include;..\..\..\..\$(FLANN_DIR)\src\cpp;..\..\..\..\$(PCL_DIR)\search\include;..\..\..\..\$(PCL_DIR)\kdtree\include;..\..\..\..\$(LASZIP3_DIR)\include;..\..\..\..\$(OPENCV_DIR)\msvc;..\..\..\..\$(OPENCV_DIR)\include;..\..\..\..\$(OPENCV_DIR)\modules\cudev\include;..\..\..\..\$(OPENCV_DIR)\modules\core\include;..\..\..\..\$(OPENCV_DIR)\modules\flann\include;..\..\..\..\$(OPENCV_DIR)\modules\imgproc\include;..\..\..\..\$(OPENCV_DIR)\modules\ml\include;..\..\..\..\$(OPENCV_DIR)\modules\photo\include;..\..\..\..\$(OPENCV_DIR)\modules\dnn\include;..\..\..\..\$(OPENCV_DIR)\modules\features2d\include;..\..\..\..\$(OPENCV_DIR)\modules\imgcodecs\include;..\..\..\..\$(OPENCV_DIR)\modules\videoio\include;..\..\..\..\$(OPENCV_DIR)\modules\calib3d\include;..\..\..\..\$(OPENCV_DIR)\modules\highgui\include;..\..\..\..\$(OPENCV_DIR)\modules\objdetect\include;..\..\..\..\$(OPENCV_DIR)\modules\stitching\include;..\..\..\..\$(OPENCV_DIR)\modules\ts\include;..\..\..\..\$(OPENCV_DIR)\modules\video\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) </AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <CppLanguageStandard>c++11</CppLanguageStandard>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;__SSSE3__;__SSE2__;__SSE__;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;__SSSE3__;__SSE2__;__SSE__;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\eigin-3.3.7\include\eigen3;..\..\..\..\$(PCL_DIR)\include\pcl-1.11;..\..\..\..\$(EIGEN3_DIR);..\..\..\..\$(PDAL_DIR)\msvc\include;..\..\..\modules\odm_georef\..\..\SuperBuild\src\pdal\vendor\jsoncpp\dist;$(BOOST_DIR);..\..\..\..\$(PCL_DIR)\common\include;..\..\..\..\$(PCL_DIR)\msvc\include;..\..\..\..\..\..\Program Files\Ensenso\development\c\include;..\..\..\..\$(WINCAP_DIR)\wpcap\libpcap;..\..\..\..\$(PNG_DIR);..\..\..\..\$(PCL_DIR)\io\include;..\..\..\..\$(PCL_DIR)\octree\include;..\..\..\..\$(QHULL_DIR)\src\libqhull;..\..\..\..\$(PCL_DIR)\surface\include;..\..\..\..\$(FLANN_DIR)\src\cpp;..\..\..\..\$(PCL_DIR)\search\include;..\..\..\..\$(PCL_DIR)\kdtree\include;..\..\..\..\$(OPENCV_DIR)\msvc;..\..\..\..\$(OPENCV_DIR)\include;..\..\..\..\$(OPENCV_DIR)\modules\cudev\include;..\..\..\..\$(OPENCV_DIR)\modules\core\include;..\..\..\..\$(OPENCV_DIR)\modules\flann\include;..\..\..\..\$(OPENCV_DIR)\modules\imgproc\include;..\..\..\..\$(OPENCV_DIR)\modules\ml\include;..\..\..\..\$(OPENCV_DIR)\modules\photo\include;..\..\..\..\$(OPENCV_DIR)\modules\dnn\include;..\..\..\..\$(OPENCV_DIR)\modules\features2d\include;..\..\..\..\$(OPENCV_DIR)\modules\imgcodecs\include;..\..\..\..\$(OPENCV_DIR)\modules\videoio\include;..\..\..\..\$(OPENCV_DIR)\modules\calib3d\include;..\..\..\..\$(OPENCV_DIR)\modules\highgui\include;..\..\..\..\$(OPENCV_DIR)\modules\objdetect\include;..\..\..\..\$(OPENCV_DIR)\modules\stitching\include;..\..\..\..\$(OPENCV_DIR)\modules\ts\include;..\..\..\..\$(OPENCV_DIR)\modules\video\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\..\eigin-3.3.7\include\eigen3;..\..\..\..\$(PCL_DIR)\include\pcl-1.11;..\..\..\..\$(EIGEN3_DIR);..\..\..\..\$(PDAL_DIR)\msvc\include;..\..\..\modules\odm_georef\..\..\SuperBuild\src\pdal\vendor\jsoncpp\dist;$(BOOST_DIR);..\..\..\..\$(PCL_DIR)\common\include;..\..\..\..\$(PCL_DIR)\msvc\include;..\..\..\..\..\..\Program Files\Ensenso\development\c\include;..\..\..\..\$(WINCAP_DIR)\wpcap\libpcap;..\..\..\..\$(PNG_DIR);..\..\..\..\$(PCL_DIR)\io\include;..\..\..\..\$(PCL_DIR)\octree\include;..\..\..\..\$(QHULL_DIR)\src\libqhull;..\..\..\..\$(PCL_DIR)\surface\include;..\..\..\..\$(FLANN_DIR)\src\cpp;..\..\..\..\$(PCL_DIR)\search\include;..\..\..\..\$(PCL_DIR)\kdtree\include;..\..\..\..\$(OPENCV_DIR)\msvc;..\..\..\..\$(OPENCV_DIR)\include;..\..\..\..\$(OPENCV_DIR)\modules\cudev\include;..\..\..\..\$(OPENCV_DIR)\modules\core\include;..\..\..\..\$(OPENCV_DIR)\modules\flann\include;..\..\..\..\$(OPENCV_DIR)\modules\imgproc\include;..\..\..\..\$(OPENCV_DIR)\modules\ml\include;..\..\..\..\$(OPENCV_DIR)\modules\photo\include;..\..\..\..\$(OPENCV_DIR)\modules\dnn\include;..\..\..\..\$(OPENCV_DIR)\modules\features2d\include;..\..\..\..\$(OPENCV_DIR)\modules\imgcodecs\include;..\..\..\..\$(OPENCV_DIR)\modules\videoio\include;..\..\..\..\$(OPENCV_DIR)\modules\calib3d\include;..\..\..\..\$(OPENCV_DIR)\modules\highgui\include;..\..\..\..\$(OPENCV_DIR)\modules\objdetect\include;..\..\..\..\$(OPENCV_DIR)\modules\stitching\include;..\..\..\..\$(OPENCV_DIR)\modules\ts\include;..\..\..\..\$(OPENCV_DIR)\modules\video\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>boost_serialization-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;boost_serialization-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;boost_filesystem-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;boost_filesystem-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;boost_date_time-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;boost_date_time-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;boost_iostreams-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;boost_iostreams-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;boost_system-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;boost_system-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;pcl_io.lib;pcl_surface.lib;proj_6_0.lib;opencv_highgui410.lib;jsoncpp.lib;pdalcpp.lib;pdal_util.lib;pcl_search.lib;pcl_octree.lib;pcl_kdtree.lib;pcl_common.lib;opencv_videoio410.lib;opencv_imgcodecs410.lib;opencv_imgproc410.lib;opencv_core410.lib;opencv_cudev410.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\..\$(PCL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\Proj-6.0.0\msvc\vc141\x64\vs2017_Release;$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);$(BOOST_DIR)\stage\$(Platform)\lib;$(CUDA_LIB_PATH)\$(Platform);..\..\..\..\$(PDAL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\$(OPENCV_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\$(JSON_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)odm_georef.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\..\$(EIGEN3_DIR)\include\eigen3;..\..\..\..\$(PCL_DIR)\include\pcl-1.11;..\..\..\..\$(EIGEN3_DIR);..\..\..\..\$(PDAL_DIR)\msvc\include;..\..\..\..\$(PDAL_DIR);..\..\..\modules\odm_georef\..\..\SuperBuild\src\pdal\vendor\jsoncpp\dist;$(BOOST_DIR);..\..\..\..\$(PCL_DIR)\common\include;..\..\..\..\$(PCL_DIR)\msvc\include;$(ENSENSO_DIR)\c\include;..\..\..\..\$(WINCAP_DIR)\wpcap\libpcap;..\..\..\..\$(PNG_DIR);..\..\..\..\$(PCL_DIR)\io\include;..\..\..\..\$(PCL_DIR)\octree\include;..\..\..\..\$(QHULL_DIR)\src\libqhull;..\..\..\..\$(PCL_DIR)\surface\include;..\..\..\..\$(FLANN_DIR)\src\cpp;..\..\..\..\$(PCL_DIR)\search\include;..\..\..\..\$(PCL_DIR)\kdtree\include;..\..\..\..\$(LASZIP3_DIR)\include;..\..\..\..\$(OPENCV_DIR)\msvc;..\..\..\..\$(OPENCV_DIR)\include;..\..\..\..\$(OPENCV_DIR)\modules\cudev\include;..\..\..\..\$(OPENCV_DIR)\modules\core\include;..\..\..\..\$(OPENCV_DIR)\modules\flann\include;..\..\..\..\$(OPENCV_DIR)\modules\imgproc\include;..\..\..\..\$(OPENCV_DIR)\modules\ml\include;..\..\..\..\$(OPENCV_DIR)\modules\photo\include;..\..\..\..\$(OPENCV_DIR)\modules\dnn\include;..\..\..\..\$(OPENCV_DIR)\modules\features2d\include;..\..\..\..\$(OPENCV_DIR)\modules\imgcodecs\include;..\..\..\..\$(OPENCV_DIR)\modules\videoio\include;..\..\..\..\$(OPENCV_DIR)\modules\calib3d\include;..\..\..\..\$(OPENCV_DIR)\modules\highgui\include;..\..\..\..\$(OPENCV_DIR)\modules\objdetect\include;..\..\..\..\$(OPENCV_DIR)\modules\stitching\include;..\..\..\..\$(OPENCV_DIR)\modules\ts\include;..\..\..\..\$(OPENCV_DIR)\modules\video\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) </AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <CppLanguageStandard>c++11</CppLanguageStandard>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;BOOST_ALL_NO_LIB;_WINDOWS;NDEBUG;__SSSE3__;__SSE2__;__SSE__;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;__SSSE3__;__SSE2__;__SSE__;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\eigin-3.3.7\include\eigen3;..\..\..\..\$(PCL_DIR)\include\pcl-1.11;..\..\..\..\$(EIGEN3_DIR);..\..\..\..\$(PDAL_DIR)\msvc\include;..\..\..\modules\odm_georef\..\..\SuperBuild\src\pdal\vendor\jsoncpp\dist;$(BOOST_DIR);..\..\..\..\$(PCL_DIR)\common\include;..\..\..\..\$(PCL_DIR)\msvc\include;..\..\..\..\..\..\Program Files\Ensenso\development\c\include;..\..\..\..\$(WINCAP_DIR)\wpcap\libpcap;..\..\..\..\$(PNG_DIR);..\..\..\..\$(PCL_DIR)\io\include;..\..\..\..\$(PCL_DIR)\octree\include;..\..\..\..\$(QHULL_DIR)\src\libqhull;..\..\..\..\$(PCL_DIR)\surface\include;..\..\..\..\$(FLANN_DIR)\src\cpp;..\..\..\..\$(PCL_DIR)\search\include;..\..\..\..\$(PCL_DIR)\kdtree\include;..\..\..\..\$(OPENCV_DIR)\msvc;..\..\..\..\$(OPENCV_DIR)\include;..\..\..\..\$(OPENCV_DIR)\modules\cudev\include;..\..\..\..\$(OPENCV_DIR)\modules\core\include;..\..\..\..\$(OPENCV_DIR)\modules\flann\include;..\..\..\..\$(OPENCV_DIR)\modules\imgproc\include;..\..\..\..\$(OPENCV_DIR)\modules\ml\include;..\..\..\..\$(OPENCV_DIR)\modules\photo\include;..\..\..\..\$(OPENCV_DIR)\modules\dnn\include;..\..\..\..\$(OPENCV_DIR)\modules\features2d\include;..\..\..\..\$(OPENCV_DIR)\modules\imgcodecs\include;..\..\..\..\$(OPENCV_DIR)\modules\videoio\include;..\..\..\..\$(OPENCV_DIR)\modules\calib3d\include;..\..\..\..\$(OPENCV_DIR)\modules\highgui\include;..\..\..\..\$(OPENCV_DIR)\modules\objdetect\include;..\..\..\..\$(OPENCV_DIR)\modules\stitching\include;..\..\..\..\$(OPENCV_DIR)\modules\ts\include;..\..\..\..\$(OPENCV_DIR)\modules\video\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\..\eigin-3.3.7\include\eigen3;..\..\..\..\$(PCL_DIR)\include\pcl-1.11;..\..\..\..\$(EIGEN3_DIR);..\..\..\..\$(PDAL_DIR)\msvc\include;..\..\..\modules\odm_georef\..\..\SuperBuild\src\pdal\vendor\jsoncpp\dist;$(BOOST_DIR);..\..\..\..\$(PCL_DIR)\common\include;..\..\..\..\$(PCL_DIR)\msvc\include;..\..\..\..\..\..\Program Files\Ensenso\development\c\include;..\..\..\..\$(WINCAP_DIR)\wpcap\libpcap;..\..\..\..\$(PNG_DIR);..\..\..\..\$(PCL_DIR)\io\include;..\..\..\..\$(PCL_DIR)\octree\include;..\..\..\..\$(QHULL_DIR)\src\libqhull;..\..\..\..\$(PCL_DIR)\surface\include;..\..\..\..\$(FLANN_DIR)\src\cpp;..\..\..\..\$(PCL_DIR)\search\include;..\..\..\..\$(PCL_DIR)\kdtree\include;..\..\..\..\$(OPENCV_DIR)\msvc;..\..\..\..\$(OPENCV_DIR)\include;..\..\..\..\$(OPENCV_DIR)\modules\cudev\include;..\..\..\..\$(OPENCV_DIR)\modules\core\include;..\..\..\..\$(OPENCV_DIR)\modules\flann\include;..\..\..\..\$(OPENCV_DIR)\modules\imgproc\include;..\..\..\..\$(OPENCV_DIR)\modules\ml\include;..\..\..\..\$(OPENCV_DIR)\modules\photo\include;..\..\..\..\$(OPENCV_DIR)\modules\dnn\include;..\..\..\..\$(OPENCV_DIR)\modules\features2d\include;..\..\..\..\$(OPENCV_DIR)\modules\imgcodecs\include;..\..\..\..\$(OPENCV_DIR)\modules\videoio\include;..\..\..\..\$(OPENCV_DIR)\modules\calib3d\include;..\..\..\..\$(OPENCV_DIR)\modules\highgui\include;..\..\..\..\$(OPENCV_DIR)\modules\objdetect\include;..\..\..\..\$(OPENCV_DIR)\modules\stitching\include;..\..\..\..\$(OPENCV_DIR)\modules\ts\include;..\..\..\..\$(OPENCV_DIR)\modules\video\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>boost_serialization-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;boost_filesystem-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;boost_date_time-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;boost_iostreams-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;boost_system-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;boost_thread-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;pcl_io.lib;pcl_surface.lib;proj_6_0.lib;opencv_highgui410.lib;json-c.lib;pdalcpp.lib;pdal_util.lib;pcl_search.lib;pcl_octree.lib;pcl_kdtree.lib;pcl_common.lib;opencv_videoio410.lib;opencv_imgcodecs410.lib;opencv_imgproc410.lib;opencv_core410.lib;opencv_cudev410.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\..\$(PCL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\Proj-6.0.0\msvc\vc141\x64\vs2017_Release;$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);$(BOOST_DIR)\stage\$(Platform)\lib;$(CUDA_LIB_PATH)\$(Platform);..\..\..\..\$(PDAL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\$(OPENCV_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\$(JSON_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)odm_georef.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\modules\odm_georef\src\FindTransform.cpp" />
+    <ClCompile Include="..\..\..\modules\odm_georef\src\Georef.cpp" />
+    <ClCompile Include="..\..\..\modules\odm_georef\src\Logger.cpp" />
+    <ClCompile Include="..\..\..\modules\odm_georef\src\MatrixTransformFilter.cpp" />
+    <ClCompile Include="..\..\..\modules\odm_georef\src\main.cpp" />
+    <ClCompile Include="..\..\..\modules\odm_georef\src\modifiedPclFunctions.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

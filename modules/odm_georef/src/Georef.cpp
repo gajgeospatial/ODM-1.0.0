@@ -10,6 +10,8 @@ using namespace std;
 #include <opencv2/imgproc/imgproc.hpp>
 #include <opencv2/highgui/highgui.hpp>
 
+//boost
+#include <boost/thread/thread.hpp>
 // This
 #include "Georef.hpp"
 

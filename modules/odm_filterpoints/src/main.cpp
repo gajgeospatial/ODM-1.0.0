@@ -1,8 +1,11 @@
 #include <iostream>
+#ifdef _MSC_VER
+#define NOMINMAX
+#endif
 #include <algorithm>
-#include <pdal/filters/OutlierFilter.hpp>
-#include <pdal/filters/RangeFilter.hpp>
-#include <pdal/filters/SampleFilter.hpp>
+#include <filters/OutlierFilter.hpp>
+#include <filters/RangeFilter.hpp>
+#include <filters/SampleFilter.hpp>
 #include "CmdLineParser.h"
 #include "Logger.h"
 #include "FloatPlyReader.hpp"

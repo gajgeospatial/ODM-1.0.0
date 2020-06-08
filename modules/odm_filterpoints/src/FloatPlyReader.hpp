@@ -33,7 +33,7 @@
 ****************************************************************************/
 
 #pragma once
-#include <pdal/io/PlyReader.hpp>
+#include <io/PlyReader.hpp>
 #include <pdal/PointTable.hpp>
 #include <pdal/PointView.hpp>
 #include <pdal/Options.hpp>

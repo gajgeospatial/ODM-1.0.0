@@ -3,8 +3,8 @@
 #include <pcl/common/eigen.h>
 #include <pdal/PointTable.hpp>
 #include <pdal/PointView.hpp>
-#include <pdal/io/PlyReader.hpp>
-#include <pdal/io/LasWriter.hpp>
+#include <io/PlyReader.hpp>
+#include <io/LasWriter.hpp>
 #include <pdal/Options.hpp>
 #include <pdal/Filter.hpp>
 

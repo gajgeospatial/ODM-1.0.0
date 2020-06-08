@@ -1,0 +1,1 @@
+This project should be installed as ODM_DIR with ProjectTool.

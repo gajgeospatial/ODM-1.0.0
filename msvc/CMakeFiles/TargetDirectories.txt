@@ -1,0 +1,10 @@
+C:/Development/op3d_active/ODM-1.0.0/msvc/CMakeFiles/ALL_BUILD.dir
+C:/Development/op3d_active/ODM-1.0.0/msvc/CMakeFiles/ZERO_CHECK.dir
+C:/Development/op3d_active/ODM-1.0.0/msvc/modules/odm_georef/CMakeFiles/odm_georef.dir
+C:/Development/op3d_active/ODM-1.0.0/msvc/modules/odm_georef/CMakeFiles/ALL_BUILD.dir
+C:/Development/op3d_active/ODM-1.0.0/msvc/modules/odm_orthophoto/CMakeFiles/odm_orthophoto.dir
+C:/Development/op3d_active/ODM-1.0.0/msvc/modules/odm_orthophoto/CMakeFiles/ALL_BUILD.dir
+C:/Development/op3d_active/ODM-1.0.0/msvc/modules/odm_cleanmesh/CMakeFiles/odm_cleanmesh.dir
+C:/Development/op3d_active/ODM-1.0.0/msvc/modules/odm_cleanmesh/CMakeFiles/ALL_BUILD.dir
+C:/Development/op3d_active/ODM-1.0.0/msvc/modules/odm_filterpoints/CMakeFiles/odm_filterpoints.dir
+C:/Development/op3d_active/ODM-1.0.0/msvc/modules/odm_filterpoints/CMakeFiles/ALL_BUILD.dir
